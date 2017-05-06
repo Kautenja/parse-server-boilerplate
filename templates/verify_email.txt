@@ -1,8 +1,8 @@
 Hi %username%,
 
-You have been invited to %appname%!
+Verify your email with %appname%!
 
-Click the box below to sign up and get started:
+Click the box below to vreify this email address:
 %link%
 
 Thanks for checking in.
