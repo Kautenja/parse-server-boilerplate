@@ -1,0 +1,10 @@
+Hi %firstName%,
+
+You have been invited to the Auburn Nursing Check-In App!
+
+Click the box below to sign up and get started:
+%link%
+
+Thanks for checking in.
+  %appname% 
+  http://www.auburnnursingcheckinapp.gq

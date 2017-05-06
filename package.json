@@ -1,0 +1,35 @@
+{
+    "name": "parse-server-boilerplate",
+    "description": "boilerplate code for a parse server project",
+    "version": "1.0.0",
+    "private": true,
+    "main": "app.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Kautenja/parse-server-boilerplate.git"
+    },
+    "author": "Christian Kauten <kautencreations@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "inline": "for filename in templates/*.html; do inliner $filename > templates/inlined${filename#*templates}; done",
+        "lint": "plato -d static_analysis cloud/*/* test/*/* config/* public/* public/*/* public/*/*/* templates/*",
+        "test": "mocha test",
+        "start": "node app.js",
+        "doc": "jsdoc -d ./docs cloud/*/*"
+    },
+    "dependencies": {
+        "express": "*",
+        "parse-server": "*",
+        "parse-server-sendmail-template-adapter": "1.1.x"
+    },
+    "devDependencies": {
+        "mocha": "*",
+        "chai": "*",
+        "plato": "*",
+        "inliner": "*",
+        "jsdoc": "*"
+    },
+    "engines": {
+        "node": ">=4.6"
+    }
+}
